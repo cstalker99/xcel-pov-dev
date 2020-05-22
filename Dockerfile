@@ -3,4 +3,3 @@ COPY --chown=1001:0  libertyDefaultApplication.ear /config/apps/libertyDefaultAp
 COPY --chown=1001:0  server.xml /config
 COPY --chown=1001:0  adminCenter.xml /config/configDropins/overrides
 RUN configure.sh
-RUN installUtility install --acceptLicense defaultServer
